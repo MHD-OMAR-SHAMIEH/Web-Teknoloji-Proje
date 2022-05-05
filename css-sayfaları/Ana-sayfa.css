@@ -1,7 +1,16 @@
 #baslik {
     background-color: #20c997;
 }
-#orta-kisim {
-    background-image: url(../resimler/programlama-resimi.png);
-    background-repeat: no-repeat;
+
+.satir-1 {
+    text-align: center;
+}
+
+.orta-kisim-buyuk-baslik {
+    color:darkmagenta;
+}
+
+.gmail-logo {
+    width: 20%;
+    height: 20%;
 }

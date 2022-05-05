@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css-sayfaları/giris.css">
+    <link rel="stylesheet" href="../css-sayfaları/bootstrap.min.css">
+    
+</head>
+<body >
+    <div class="login ">
+        
+        <form action="giris.php" class="mx-auto" method="post"   >
+            <div id="frm" class="container  ">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="fw-bolder fs-1 text-center">hoşgeldiniz</p>
+                    </div>
+                </div>
+                <div class="row  ">
+                    <div class="col-sm-6 text-end ">
+                        <p>AD SOYAD</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="isim" name="adi" placeholder="adınız soyadınız">
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 text-end">
+                        <p>EPOSTA</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" name="eposta"  placeholder="epostanız" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 text-end">
+                        <p>ŞİFRE</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="password" name="sifre" placeholder="şifreniz" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 text-end">
+                        <input type="submit" class="btn btn-success" name="GÖNDER" value="GÖNDER">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="reset" class="btn btn-primary" value="RESET">
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
