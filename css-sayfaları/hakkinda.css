@@ -1,0 +1,123 @@
+* {
+    font-family:'puppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color:lightcoral;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    color:darkslateblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: darkslateblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: black;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../resimler/cam-berrakliginda-bir-deniz-akvaryum-koyu.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color:darkred;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.main p {
+    color:azure;
+    font-size: 1.5em;
+}
+
+.main h3 {
+    color:azure;
+    font-weight: bold;
+}
+
+.tanıtım-başlık {
+    color: red;
+    background-color: aqua;
+}
+
+/* img {
+    border-radius: 3%;
+} */
+
+.tanıtım-kısım {
+    background-color: antiquewhite;
+}
+
+.hobiler-başlık {
+    background-color:aqua ;
+    color: red;
+}
+
+.hobi-resimleri {
+    border-radius: 3%;
+}
+
+.hobiler-kısım {
+    background-color: darkgrey;
+}
+
+.animeler-başlık {
+    background-color: aqua;
+}
+
+.animeler-kısım {
+    background-color: hotpink;
+}
+
+.naruto-resim {
+    height: cover;
+    width: cover;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+
+    }
+    .navigation {
+        padding-left: 10px;
+    }
+
+    .title {
+       font-size:  1.8em;
+    }
+}

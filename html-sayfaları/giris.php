@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css-sayfaaları/giris-2.css">
+    <link rel="stylesheet" href="../css-sayfaları/giris-2.css">
     <link rel="stylesheet" href="../css-sayfaları/bootstrap.min.css">
-    <title>Document</title>
 </head>
-<body>
-    <div class="container">
-        <div class="row">
+<body class="bg-danger" >
+    <div class="container mx-auto bg-primary">
+        <div class="row fs-3 text-center text-white">
             <div class="col-sm-12">
             <?php
                 $kullanici_adi = $_POST['name-surname'];
