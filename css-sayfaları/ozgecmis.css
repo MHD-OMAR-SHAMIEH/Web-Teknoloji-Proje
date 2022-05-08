@@ -1,0 +1,54 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    
+    background-color: bisque;
+}
+header .name {
+    width: 65%;
+    padding: 2%;
+}
+
+section {
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    background-color:hotpink;
+}
+
+section article {
+    border-right: 1px solid black;
+    padding-right: 2%;
+    width: 65%;
+}
+
+section aside {
+    width: 35%;
+    padding-left: 4%;
+}
+
+header h1 {
+    font-size: 200%;
+    color: crimson  ;
+}
+
+header h2 {
+    font-size: 150%;
+    
+}
+
+section article h3 {
+    color: aqua;
+}
+
+section aside h3 {
+    color:gold;
+}
+
+section span{
+    font-weight: bold;
+}
