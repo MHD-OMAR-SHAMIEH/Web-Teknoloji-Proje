@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css-sayfaları/bootstrap.min.css">
+    <link rel="stylesheet" href="../css-sayfaları/iletisim.css">
+</head>
+<body>
+    <header>
+        <div class="container bg-info p-3">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h1>HOŞGELDİNİZ</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <p class="fs-3">bu sayfada bir form dolduracaksınız</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form action="form-bilgileri.php" method="post" name="benimForm" onsubmit="return formKontrol()">
+                <div class="form-kisim1">
+                    <div class="row fs-4 p-3" >
+                        <div class="col-sm-6 text-center">
+                            <label for="ad">AD : </label> 
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="ad" placeholder="en fazla 25 harf">
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-6 text-center">
+                            <label for="soyad">SOYAD :</label> 
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="soyad" placeholder="en fazla 15 harf">
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-6 text-center"> EPOSTA : </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="eposta" placeholder="eposta formatında olamalı"> 
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-6 text-center">ŞİFRE : </div>
+                        <div class="col-sm-6 ">
+                            <input type="password" name="sifre" placeholder="@ operatoru öncesi">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-kisim2">
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-6 text-center">CİNSİYET : </div>
+                        <div class="col-sm-3 ">
+                        <input type="radio" name="cinsiyet" value="ERKEK">
+                        <label for="cinsiyet">ERKEK</label>
+                        </div>
+                        <div class="col-sm-3">
+                        <input type="radio" name="cinsiyet" value="KADIN">
+                        <label for="cinsiyet">KADIN</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-kisim3">
+                    <div class="row fs-4 p-4">
+                        <div class="col-sm-6 text-center">OKUDUĞUNUZ ÜNİVERSİTE</div>
+                        <div class="col-sm-6">
+                            <input type="text" name="universite"  list="universiteler">
+                            <datalist   id="universiteler">
+                                <option value="sau">Sakarya Üniversitesi</option>
+                                <option value="subu">Sakarya Uygulamalı Bilimler Üniversitesi</option>
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-kisim4">
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-6 text-center">FORM TİPİ</div>
+                        <div class="col-sm-6 text-center">
+                            <select name="form-tipi" id="form-tipi">
+                                <option value="öneri" id="oneri">öneri</option>
+                                <option value="soru" id="soru">soru</option>
+                                <option value="şikayet" id="sikatet">şikayet</option>
+                                <option value="belirtilmedi" id="diger">diğer</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-kisim5">
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-6 text-center">HANGİ DERSLER HAKKINDA </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-12 text-center">
+                            <input type="checkbox" name="ders" id="web-tek" value="web teknolojileri"> WEB TEKNOLOJİLERİ
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-12 text-center">
+                            <input type="checkbox" name="ders" id="ndp" value="nesneye dayalı programlama"> NESNEYE DAYALI PROGRAMLAMA
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-12 text-center">
+                            <input type="checkbox" name="ders" id="mat" value="matematik"> MATEMATİK
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-12 text-center">
+                            <input type="checkbox" name="ders" id="fizik" value="fizik"> FİZİK
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-12 text-center">
+                            <input type="checkbox" name="ders" id="ols-ist" value="olasılık ve istatistik"> OLASILIK VE İSTATİSTİK
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-12 text-center">
+                            <input type="checkbox" name="ders" id="ing" value="ingilizce"> İNGİLİZCE
+                        </div>
+                    </div>
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-12 text-center">
+                            <input type="checkbox" name="ders" value="belirtilmemiş"> YULARIDAKİLERDEN HİÇ BİRİ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-kisim6">
+                    <div class="row form-floating p-3 fs-4">
+                        <textarea name="mesaj" class="form-control" ></textarea>
+                    </div>
+                </div>
+
+                <div class="form-kisim7">
+                    <div class="row fs-4 p-3">
+                        <div class="col-sm-6 text-end">
+                            <input type="submit" value="FORM GÖNDER" id="btnGonder" >
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="reset" value="FORM RESETLE">
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </form>
+        </div>
+    </header>
+    <script src="../js-sayfaları/iletisim.js"></script>
+</body>
+</html>
