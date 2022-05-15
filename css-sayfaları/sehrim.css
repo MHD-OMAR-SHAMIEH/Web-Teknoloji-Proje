@@ -1,0 +1,19 @@
+.baslik {
+    text-transform: uppercase;
+    border-bottom: 0.1em solid red;
+    color: rgb(21, 1, 72);
+    background-color: aqua;
+}
+
+.baslik-bilgiler {
+    font-size: large;
+    color: rgb(120, 69, 191);
+    background-color: chartreuse;
+    border-bottom: 0.1em solid red;
+}
+
+.baslik-son {
+    color: darkred;
+    border-bottom: 0.1em solid red;
+}
+
